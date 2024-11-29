@@ -66,9 +66,11 @@ void loop() {
     lcd.setCursor(3,1);   //Move cursor to character 2 on line 1
     lcd.print("sinAlerta");
     if (digitalRead(pinosBotoes[4]) == LOW) {
-      lcd.clear();
-      lcd.setCursor(2,0);
-      lcd.print("Jogo 1 ativo");
+      lcd.clear();         
+      lcd.setCursor(2,0);  
+      lcd.print("Inicia jogo!");
+      lcd.setCursor(4,1);  
+      lcd.print("1 Player");
       digitalWrite(pinosLeds[4], HIGH);// Botão 11 pressionado
       delay(200); // Pequeno delay para debounce
       jogo_ativo = true; // Ativa o jogo
@@ -285,7 +287,7 @@ void aguardarJogada2() {
 
 void gameOver2() {
   lcd.clear();
-  lcd.setCursor(3,0);
+  lcd.setCursor(5,0);
   lcd.print("PERDEU!");
   for (int i = 0; i <= 3; i++) {
     digitalWrite(pinosLeds[i], HIGH);
@@ -436,6 +438,9 @@ void aguardarJogada() {
 }
 
 void gameOver() {
+  lcd.clear();
+  lcd.setCursor(5,0);
+  lcd.print("PERDEU!");
   for (int i = 0; i <= 3; i++) {
     digitalWrite(pinosLeds[i], HIGH);
     delay(200);
