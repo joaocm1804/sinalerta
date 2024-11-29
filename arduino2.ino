@@ -73,6 +73,8 @@ void loop() {
       // LCD
       lcd.clear();         
       lcd.setCursor(2,0);  
+      lcd.print("Inicia jogo!");
+      lcd.setCursor(4,1);  
       lcd.print("1 Player");
       //////////////////////////////////////////////////////
       jogo_ativo = true; // Ativa o jogo
@@ -173,7 +175,7 @@ void aguardarJogada2() {
 
 void gameOver2() {
   lcd.clear();
-  lcd.setCursor(3,0);
+  lcd.setCursor(5,0);
   lcd.print("PERDEU!");
   for (int i = 0; i <= 3; i++) {
     digitalWrite(pinosLeds[i], HIGH);
@@ -378,6 +380,10 @@ void aguardarJogada() {
 }
 
 void gameOver() {
+  lcd.clear();
+  lcd.setCursor(5,0);
+  lcd.print("PERDEU!");
+
   for (int i = 0; i <= 3; i++) {
     digitalWrite(pinosLeds[i], HIGH);
     delay(200);
