@@ -48,10 +48,15 @@ Com o **sinAlerta**, o objetivo é:
 
 ---
 
-##Imagens do protótipo (TinkerCad)
+## Imagens do protótipo (TinkerCad)
+
+![Shiny Bojo](https://github.com/user-attachments/assets/7ed5bb26-929b-4394-884d-b0345b5c33d5)
 
 
-##Imagens do protótipo (Real)
+## Imagens do protótipo (Real)
+
+![IMG_0709](https://github.com/user-attachments/assets/5702d75c-5d71-42fa-b214-1d2417aba19a)
+
 
 ---
 
